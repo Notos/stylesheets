@@ -1,0 +1,1083 @@
+/* Body */
+* {
+	padding: 0px;
+	margin: 0px;
+}
+html {
+	width: 100%;
+}
+body {
+	width: 100%;
+	font-family: tahoma,helvetica,sans-serif;
+	font-size: 8pt;
+	color: #ccc;
+	background: url(http://whatimg.com/i/v5rrq3.jpg) repeat center top;
+	background-attachment: fixed;
+	text-shadow: 1px 1px 1px black;
+}
+#logo {
+	height: 136px;
+	background: url(http://whatimg.com/i/bkubqn.png) no-repeat center;
+	margin: 0px auto 20px auto;
+}
+
+
+/* Basis stuff */
+a {
+	text-decoration: none;
+	border: none;
+	color: #40B3C5;
+}
+a:hover {
+	text-decoration: underline;
+	color: #1165FF;
+}
+h1,h2,h3,h4 {
+	margin: 0px; font-weight: bold;
+}
+h2 {
+	text-align: center;
+	font-size: 12pt;
+}
+h4 {
+	font-size: 8pt;
+}
+li {
+	margin: 5px 15px;
+}
+input, button {
+	font-size:9pt;
+	color: #fff;
+	background: url(http://whatimg.com/i/isb6tx.png);
+	padding: 2px;
+	margin: 5px 0px;
+}
+textarea {
+	padding: 2px 3px;
+	color: #ddd;
+	background: url(http://whatimg.com/i/isb6tx.png);
+	display: block;
+	overflow: auto;
+	line-height: 1.4em;
+}
+img {
+	border: none;
+}
+
+/* IE fix voor display:none */
+.hidden {
+	position: absolute;
+	left: -10000px;
+	display: none;
+}
+
+/* Ratio */
+.r00 { color: #FF0000; }
+.r01 { color: #FF1300; }
+.r02 { color: #FF1300; }
+.r03 { color: #FF2600; }
+.r04 { color: #FF4C00; }
+.r05 { color: #FF5E00; }
+.r06 { color: #FF5E00; }
+.r07 { color: #FF7100; }
+.r08 { color: #FF9700; }
+.r09 { color: #FFAA00; }
+.r10 { color: #74C42E; }
+.r20 { color: #418B00; }
+.r50 { color: #418B00; }
+.r99 { color: #418B00; }
+
+/* BBCode parser */
+span.size1 { font-size: 0.75em; }
+span.size2 { font-size: 1em; }
+span.size3 { font-size: 1.25em; }
+span.size4 { font-size: 1.5em; }
+span.size5 { font-size: 1.75em; }
+span.size6 { font-size: 2em; }
+span.size7 { font-size: 2.25em; }
+span.size8 { font-size: 2.5em; }
+span.size9 { font-size: 2.75em; }
+span.size10 { font-size: 3em; }
+ul.thin { margin: 0px 0px 0px 25px; padding: 0px; }
+ul.thin li { margin: 0px 0px; padding: 0px; }
+
+/* Logo */
+#header {
+	background: url(http://whatimg.com/i/jmqv95.png) no-repeat 50% 0px;
+	height: 360px;
+}
+#logo a {
+	display: block;
+	width: 360px;
+	height: 100px;
+	top: 18px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+#extra1 {
+	background: url(http://whatimg.com/i/f7mrct.png) repeat-x;
+	height:100px;
+	width:100%;
+	position: absolute;
+	top: 18px;
+	z-index: -1;
+}
+
+/* Menu Deel 1: hoofdlinks */
+#menu {
+	position: absolute;
+	width: 1000px;
+	height: 55px;
+	padding-top:15px;
+	text-align: center;
+	background:url(http://whatimg.com/i/zp6rxt.png) no-repeat;
+}
+#menu ul li {
+	position: relative;
+	display: inline-block;
+	width: 64px;
+	margin-bottom:18px;
+	height: 32px;
+}
+#menu ul li a {
+	display: inline-block;
+	padding-top: 34px;
+}
+#menu ul li a:hover {
+	text-decoration: none;
+}
+#nav_index { background: url(http://whatimg.com/i/gqbsww.png) no-repeat center; }
+#nav_torrents { background: url(http://whatimg.com/i/agflkv.png) no-repeat center; }
+#nav_collages { background: url(http://whatimg.com/i/96sdhw.png) no-repeat center; }
+#nav_requests { background: url(http://whatimg.com/i/ut54xo.png) no-repeat center;}
+#nav_forums { background: url(http://whatimg.com/i/dwrb1j.png) no-repeat center; }
+#nav_irc { background: url(http://whatimg.com/i/22qvy6.png) no-repeat center; }
+#nav_top10 { background: url(http://whatimg.com/i/oo71dm.png) no-repeat center; }
+#nav_rules { background: url(http://whatimg.com/i/mdgyo3.png) no-repeat center; }
+#nav_wiki { background: url(http://whatimg.com/i/hehwgw.png) no-repeat center; }
+#nav_staff { background: url(http://whatimg.com/i/gvepco.png) no-repeat center; }
+
+/* Menu Deel 2: userinfo */
+#userinfo {
+	position: absolute;
+	top: 226px;
+	background:url(http://whatimg.com/i/zhxktz.png) repeat-y;
+	color: #eee;
+	padding: 4px 0px;
+	width: 1000px;
+	height: 32px;
+	text-align: center;
+	font-size: 11px;
+}
+#userinfo img {
+	margin-top: -5px;
+}
+#userinfo ul {
+	display: inline-block;
+	float: left;
+}
+#userinfo ul li {
+	display: inline-block;
+	margin: 2px;
+}
+#userinfo a {
+	color: #ccc;
+}
+#userinfo a:hover {
+	text-decoration: none;
+	color: #aaa;
+}
+#userinfo_username {
+	width: 140px;
+	padding: 9px 4px;
+}
+#nav_userinfo {
+	font-weight: bold;
+}
+#userinfo_major {
+	width: 140px;
+	padding: 9px 4px;
+}
+#nav_upload {
+	font-weight: bold;
+	text-decoration: underline;
+}
+#userinfo_stats {
+	border: 1px solid #666;
+	padding: 8px 0px;
+	background: url(http://whatimg.com/i/nu3bee.png) repeat;
+	width: 358px;
+}
+#stats_seeding span {
+	color: green;
+}
+#stats_leeching span {
+	color: red;
+}
+#stats_ratio span, #stats_required span {
+	color: #BEC635;
+}
+#userinfo_minor {
+	width: 332px;
+	padding: 0 6px;
+}
+#userinfo_minor li {
+	padding: 0px 8px 2px 0px;
+}
+#userinfo_minor a {
+	padding-left: 17px;
+}
+#nav_inbox { background: url(http://whatimg.com/i/mfbm3m.png) no-repeat; }
+#nav_staffinbox { background: url(http://whatimg.com/i/rqzhxu.png) no-repeat; }
+#nav_bookmarks { background: url(http://whatimg.com/i/vllkxv.png) no-repeat; }
+#nav_uploaded { background: url(http://whatimg.com/i/xbemnc.png) no-repeat; }
+#nav_subscriptions { background: url(http://whatimg.com/i/exo88p.png) no-repeat; }
+#nav_comments { background: url(http://whatimg.com/i/fwmk4j.png) no-repeat; }
+#nav_friends { background: url(http://whatimg.com/i/c35d1d.png) no-repeat; }
+#nav_notifications { background: url(http://whatimg.com/i/lcnxxf.png) no-repeat }
+
+/* Menu Deel 3: searchbars */
+#searchbars {
+	position: absolute;
+	top: 266px;
+	width: 1000px;
+	text-align: center;
+	background: url(http://whatimg.com/i/bfeqjc.png) no-repeat;
+	padding: 8px 0px 20px 0px;
+}
+#searchbars input {
+	padding: 1px 2px;
+	width: 100px;
+}
+#searchbars ul {
+	margin: 0 auto;
+}
+#searchbars ul li {
+	display: inline;
+	margin: 0px 1px;
+        list-style: none;
+        position: relative;
+}
+#searchbars ul li form {
+	display: inline;
+}
+#searchbars ul li ul {
+	position: absolute;
+}
+#artistcomplete {
+	background: #333;
+	border: 1px solid #666;
+	border: 1px solid rgba(255, 255, 255, .2);
+	width: 106px;
+	z-index: 10;
+}
+#artistcomplete li {
+	display: block !important;
+	color: #40B3C5;
+}
+#artistcomplete li:hover {
+	text-decoration: underline;
+	color: #1165FF;
+}
+
+/* Menu Deel 4: alertbar */
+#alerts {
+	padding: 0px;
+	width: 1000px;
+	margin: 178px 0px 35px 0px;
+}
+#cat-selector ul {
+	width: 100%;
+}
+#cat-selector ul li {
+	display: inline;
+	width: 12em;
+	height: 1em;
+	float: left;
+}
+.alertbar {
+	border: 1px solid #7A4E27;
+	background-color: #FFE07A;
+	text-align: center;
+	font-weight: bold;
+	width: 350px;
+	margin: 0px auto;
+	padding: 4px;
+	text-shadow: 0px 0px 0px;
+	color: #000;
+}
+
+.alertbar a {
+	color: #000;
+}
+.alertbar a:hover {
+	color: #555;
+	text-decoration: none;
+}
+
+/* Footer */
+#footer {
+	text-align: center;
+	padding: 50px 0px 10px 0px;
+}
+
+/* Main Layout (Alle pagina's) */
+#wrapper {
+	width: 1000px;
+	margin: auto;
+}
+#content {
+	margin: auto;
+	width: 980px;
+	background: url(http://whatimg.com/i/cvyo8f.png) repeat-y;
+	position: relative;
+	overflow: visible;
+	padding: 0px 10px;
+}
+#content:before {
+	content: url(http://whatimg.com/i/q9ywqn.png);
+	position: relative;
+	top: -15px;
+	right: 10px;
+}
+#content:after {
+	content: url(http://whatimg.com/i/69ajuw.png);
+	position: relative;
+	top: 32px;
+	right: 10px;
+}
+#disclaimer_container {
+	background: none;
+}
+div.linkbox {
+	text-align: center;
+	padding: 5px;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.min_padding {
+	padding: 0px;
+	margin: 0px 0px;
+}
+p.min_padding {
+	margin: 2px 0px;
+}
+.vertical_space {
+	padding: 1em;
+	margin: 5px auto;
+	padding: 5px;
+	background: url(http://whatimg.com/i/nu3bee.png) repeat;
+	border: 1px solid #666;
+	border: 1px solid rgba(255, 255, 255, .2);
+}
+.box {
+	font-size: 8pt;
+}
+.tags {
+	font-style: italic;
+	font-weight: normal;
+	float: none !important;
+}
+.tags a {
+	color: #bbb;
+}
+.tags a:hover {
+	color: #777;
+	text-decoration: none;
+}
+.releasename {
+	font-weight: normal;
+	color: #fff;
+	padding-left: 10px;
+}
+.information {
+	padding-left: 10px;
+}
+.noborder {
+	border: none;
+}
+ul.nobullet {
+	list-style-type: none;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+tr {
+	background: url(http://whatimg.com/i/nu3bee.png) repeat;
+}
+td {
+	border: 1px solid #666;
+	border: 1px solid rgba(255, 255, 255, .2);  /* RGBA overrides normal borders with .2 transparent borders on compatible browsers */
+	padding: 5px;
+	text-align: left;
+}
+td.colhead, .colhead td, td.colhead_dark, .colhead_dark td {
+	font-weight: bold;
+	color: #fff;
+	padding: 5px;
+	border: 0px;
+	background: url(http://whatimg.com/i/tthbiz.png) repeat;
+	-o-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+	-icab-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+	-khtml-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+	-moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+}
+.colhead .sign {
+	padding: 4px 8px 0px 8px;
+	font-size: 12pt;
+	font-weight: bold;
+}
+.colhead_dark a {
+	color: #fff;
+}
+td.label {
+	font-weight: bold;
+	text-align: right;
+	width: 180px;
+}
+table.slice {
+	margin-top: -1px;
+}
+.error_message {
+	border: 1px solid #666;
+	padding: 3px 0px 3px 0px;
+	background-color: #AF2525;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+.save_message {
+	border: 1px solid #666;
+	padding: 3px 0px 3px 0px;
+	background-color: #F4E649;
+	text-align: center;
+	color: #492802;
+	font-weight: bold;
+}
+.elem_error {
+	border: 3px solid #B00D0D;
+}
+/* Categorieën */
+.cats_elearningvideos {
+	content: url(http://whatimg.com/i/sap4el.png);
+}
+.cats_ebooks {
+	content: url(http://whatimg.com/i/7a5brp.png);
+}
+.cats_comics {
+	content: url(http://whatimg.com/i/fvuezs.png);
+}
+.cats_comedy {
+	content: url(http://whatimg.com/i/eof3oq.png);
+}
+.cats_audiobooks {
+	content: url(http://whatimg.com/i/fjzevh.png);
+}
+.cats_applications {
+	content: url(http://whatimg.com/i/2vqzvs.png);
+}
+.cats_applications {
+	content: url(http://whatimg.com/i/2vqzvs.png);
+}
+.cats_music {
+	content: url(http://whatimg.com/i/ws0hbi.png);
+}
+
+/* Pagina met 1 column */
+#logchecker .thin:not(.box), #logchecker .thin:not(.box), #upload .thin:not(.box), #user #userform, #donate .thin:not(.box), #reportsv2 .thin:not(.box), #torrents .log_outer, #friends .thin:not(.box), #comments .thin:not(.box), #staffpm .thin:not(.box), #inbox .thin:not(.box), #userhistory .thin:not(.box), #rules .thin:not(.box), #forums .thin:not(.box), #top10 .thin:not(.box), #chat .thin:not(.box), #staff .thin:not(.box) {
+	background: url(http://whatimg.com/i/w1lnwf.png) repeat-y;
+	margin-top: 20px;
+	width: 940px;
+	padding: 0px 20px;
+}
+#logchecker .thin:not(.box):before, #upload .thin:not(.box):before, #user #userform:before, #donate .thin:not(.box):before, #reportsv2 .thin:not(.box):before, #torrents .log_outer:before, #friends .thin:not(.box):before, #comments .thin:not(.box):before, #staffpm .thin:not(.box):before, #inbox .thin:not(.box):before, #userhistory .thin:not(.box):before, #rules .thin:not(.box):before, #forums .thin:not(.box):before, #top10 .thin:not(.box):before, #chat .thin:not(.box):before, #staff .thin:not(.box):before {
+	content: url(http://whatimg.com/i/lhm74v.png);
+	position: relative;
+	top: -28px;
+	right: 20px;
+	z-index: -1;
+}
+#logchecker .thin:not(.box):after, #upload .thin:not(.box):after, #user #userform:after, #donate .thin:not(.box):after, #reportsv2 .thin:not(.box):after, #torrents .log_outer:after, #friends .thin:not(.box):after, #comments .thin:not(.box):after, #staffpm .thin:not(.box):after, #inbox .thin:not(.box):after, #userhistory .thin:not(.box):after, #rules .thin:not(.box):after, #forums .thin:not(.box):after, #top10 .thin:not(.box):after, #chat .thin:not(.box):after, #staff .thin:not(.box):after {
+	content: url(http://whatimg.com/i/udpvfw.png);
+	position: relative;
+	top: 28px;
+	right: 20px;
+	z-index: -1;
+}
+#upload .thin>h2:first-of-type, #donate .thin>h2:first-of-type, #reportsv2 .thin>h2:first-of-type, #friends .thin>h2:first-of-type, #comments .thin>h2:first-of-type, #staffpm .thin>h2:first-of-type, #userhistory .thin>h2:first-of-type, #rules .thin>h2:first-of-type, #rules .thin>h2:first-of-type, #forums .thin>h2:first-of-type, #top10 .thin>h2:first-of-type, #chat .thin>h2:first-of-type, #staff .thin>h2:first-of-type {
+	margin: -35px 0px 15px 0px;
+}
+
+/* Pagina met 2 columns */
+.sidebar {
+	float: right;
+	margin-top: 15px;
+}
+.sidebar .box {
+	margin-bottom: 40px;
+}
+.sidebar .head {
+	text-align: center;
+	color: #fff;
+	margin-top: -30px;
+	font-weight: bold;
+}
+.sidebar .box {
+	background: url(http://whatimg.com/i/xubof1.png) repeat-y;
+	padding: 0px 25px;
+	width: 206px;
+}
+.sidebar .box:before {
+	content: url(http://whatimg.com/i/vfimx9.png);
+	position: relative;
+	top: -24px;
+	right: 25px;
+	z-index: -1;
+}
+.sidebar .box:after {
+	content: url(http://whatimg.com/i/lyqxxs.png);
+	position: relative;
+	top: 25px;
+	right: 25px;
+	z-index: -1;
+}
+.sidebar h3 {
+	padding-left: 15px;
+	margin-top: -20px;
+	margin-bottom: 30px;
+}
+.sidebar textarea {
+	width: 216px;
+}
+
+.main_column {
+	width: 677px;
+	background: url(http://whatimg.com/i/d5netn.png) repeat-y;
+	padding: 0px 20px;
+	margin-top: 15px;
+}
+.main_column:before {
+	content: url(http://whatimg.com/i/reqiyi.png);
+	position: relative;
+	top: -22px;
+	right: 20px;
+	z-index: -1;
+}
+.main_column:after {
+	content: url(http://whatimg.com/i/ksdloz.png);
+	position: relative;
+	top: 33px;
+	right: 20px;
+}
+
+
+/* Index pagina: nieuws
+Verschil met andere 2 column pagina's: we willen geen donker kader
+rond de gehele main_column maar een aparte voor elke nieuwsitem
+*/
+#index .main_column {
+	background: none !important;
+	padding: 0px !important;
+	margin-top: -15px !important;
+}
+#index .main_column:before {
+	content: none !important;
+}
+#index .main_column:after {
+	content: none !important;
+}
+#index .main_column .pad {
+	width: 666px;
+	background: url(http://whatimg.com/i/d5netn.png) repeat-y;
+	padding: 0px 20px;
+}
+#index .main_column .pad:before {
+	content: url(http://whatimg.com/i/reqiyi.png);
+	position: relative;
+	top: -22px;
+	right: 20px;
+	z-index: -1;
+}
+#index .main_column .pad:after {
+	content: url(http://whatimg.com/i/ksdloz.png);
+	position: relative;
+	right: 20px;
+	top: 33px;
+}
+#index .main_column .head {
+	text-align:center;
+	color: #fff;
+}
+#index .main_column .box {
+	margin-bottom: 40px;
+}
+#index .sidebar {
+	margin-top: 20px;
+}
+#index ul.stats li {
+	padding: 0px 0px 1px 0px;
+	margin: 5px;
+}
+#index ul.poll li {
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+	clear: left;
+}
+#index ul.poll li.graph {
+	margin-bottom: 3px;
+	padding-left: 20px;
+}
+
+/* User: profile
+Verschil met andere 2 column pagina's: we willen geen donker kader
+rond elke deel van de profiel
+*/
+#user .main_column {
+	background: none !important;
+	padding: 0px !important;
+	width: 706px !important;
+	margin-top: 0px;
+}
+#user .main_column:before {
+	content: none !important;
+}
+#user .main_column:after {
+	content: none !important;
+}
+#user .main_column .box {
+	margin-bottom: 40px;
+}
+#profilediv {
+	background: url(http://whatimg.com/i/d5netn.png) repeat-y;
+	padding: 0px 15px;
+}
+#profilediv:before {
+	content: url(http://whatimg.com/i/reqiyi.png);
+	position: relative;
+	top: -22px;
+	right: 15px;
+	z-index: -1;
+}
+#profilediv:after {
+	content: url(http://whatimg.com/i/ksdloz.png);
+	position: relative;
+	right: 15px;
+	top: 33px;
+}
+#user .main_column .head {
+	padding: 8px 0 0 16px;
+	text-align:center;
+	color: #fff;
+	font-weight: bold;
+}
+#user .main_column #requests table {
+	background: none;
+}
+#user .main_column textarea {
+	width: 668px !important;
+}
+#user .sidebar {
+	margin-top: 20px;
+}
+#user h3 + form {
+	/* This is meant for notifications */
+	background: url(http://whatimg.com/i/w1lnwf.png) repeat-y;
+	margin-top: 20px;
+	width: 940px;
+	padding: 0px 20px;
+}
+#user h3 + form:before {
+	content: url(http://whatimg.com/i/lhm74v.png);
+	position: relative;
+	top: -28px;
+	right: 20px;
+	z-index: -1;
+}
+#user h3 + form:after {
+	content: url(http://whatimg.com/i/udpvfw.png);
+	position: relative;
+	top: 28px;
+	right: 20px;
+	z-index: -1;
+}
+#user h3 {
+	position: relative;
+	top: 28px;
+	left: 20px;
+}
+#user .head > span:first-child {
+	float: none !important;
+	display: inline-block;
+	text-align: left;
+	width: 560px;
+	margin-left: -15px;
+}
+#user .head > span:first-child+span {
+	float: none !important;
+	display: inline-block;
+	text-align: right;
+	width: 105px;
+}
+/* Forum */
+#forums .thin .clear {
+	/* Poll */
+	background: url(http://whatimg.com/i/nu3bee.png) repeat;
+	border: 1px solid #666;
+	border: 1px solid rgba(255, 255, 255, .2);
+	padding: 5px;
+	margin-bottom: 10px;
+}
+#forums h3 {
+	margin-top: 15px;
+}
+td.avatar {
+	width: 150px;
+	padding: 0px;
+}
+blockquote {
+	padding: 10px;
+	border: 1px dashed #666;
+	max-width: 754px;
+}
+.unread_locked_sticky { background: url(http://whatimg.com/i/yv2tbu.png) no-repeat center center; }
+.read_locked_sticky { background: url(http://whatimg.com/i/51uhvw.png) no-repeat center center; }
+.read_sticky { background: url(http://whatimg.com/i/zvphiy.png) no-repeat center center; }
+.unread_sticky { background: url(http://whatimg.com/i/hsvuu7.png) no-repeat center center; }
+.unread_locked { background: url(http://whatimg.com/i/tgvwl7.png) no-repeat center center; }
+.read_locked { background: url(http://whatimg.com/i/yxwkfj.png) no-repeat center center; }
+.unread { background: url(http://whatimg.com/i/7kbfz4.png) no-repeat center center; }
+.read { background: url(http://whatimg.com/i/vww0e1.png) no-repeat center center; }
+.last_read {
+	width: 15px;
+	height: 15px;
+	background: url(http://whatimg.com/i/u2xhwp.png) no-repeat center center;
+	margin-left: 5px;
+}
+.last_read a {
+	border: none;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.last_read a:hover {
+	border: none;
+}
+
+/* Inbox */
+#inbox .box h2, #staffpm .box h2 {
+	margin: 0px;
+}
+#inbox .box input[type=text], #staffpm .box input[type=text] {
+	width: 182px !important;
+}
+tr.unreadpm {
+	background: url(http://whatimg.com/i/c063ub.png) repeat;
+}
+
+/* Regels */
+#rules #general {
+	margin: -35px 0px 8px 0px;
+}
+#rules .box {
+	width: 100%;
+	padding: 0px !important;
+}
+#rules p {
+	margin: 5px 0px;
+}
+
+/* Upload */
+#upload #dnu {
+	padding: 0px 20px;
+}
+#upload #dnu_header + p + table {
+	margin-bottom: 40px;
+}
+#upload #dnulist {
+	margin-bottom: 40px;
+}
+
+/* Wiki */
+#artist .thin>.pad:nth-of-type(1), #wiki .thin>.pad:nth-of-type(1) {
+	/* This matches only .pad if it is the first child of .thin and followed right after .thin. Meaning it will no affect wiki pages themselves but only create, edit, etc.)*/
+	background: url(http://whatimg.com/i/w1lnwf.png) repeat-y;
+	margin-top: 20px;
+	width: 940px;
+	padding: 0px 20px;
+}
+#artist .thin>.pad:nth-of-type(1):before, #wiki .thin>.pad:nth-of-type(1):before {
+	content: url(http://whatimg.com/i/lhm74v.png);
+	position: relative;
+	top: -28px;
+	right: 20px;
+	z-index: -1;
+}
+#artist .thin>.pad:nth-of-type(1):after, #wiki .thin>.pad:nth-of-type(1):after {
+	content: url(http://whatimg.com/i/udpvfw.png);
+	position: relative;
+	top: 28px;
+	right: 20px;
+	z-index: -1;
+}
+#artist .torrent_table {
+	width: 666px;
+}
+
+
+/* Requests */
+#requests table {
+	border-collapse: collapse;
+}
+#requests #request_table {
+	border-collapse: separate;
+}
+
+/* Torrentpagina */
+#torrents .thin {
+	background: none !important;
+	padding: 0px;
+	width: 980px;
+}
+#torrents .thin:before {
+	content: none !important;
+}
+#torrents .thin:after {
+	content: none !important;
+}
+#torrents input[type=submit] {
+	margin: 10px 0px;
+}
+#torrents .main_column {
+	margin-top: 15px;
+	width: 666px;
+}
+#torrents #quickpost {
+	width: 658px;
+}
+#torrents #collages, #torrents #personal_collages, #torrents .main_column .box {
+	margin-top: 15px;
+}
+
+#torrents .linkbox + table:not(.forum_post), #torrents h3 + table, #requests .linkbox + table, #collage .linkbox + table {
+	background: url(http://whatimg.com/i/w1lnwf.png) repeat-y;
+	margin: 0px;
+	padding: 0px 20px;
+	border-collapse: separate;
+}
+#torrents form + .linkbox, #torrents .linkbox + h3, #requests div + .linkbox, #collage div + .linkbox {
+	background: url(http://whatimg.com/i/lhm74v.png) no-repeat bottom;
+	padding-top: 25px;
+}
+#torrents form + .linkbox + table + .linkbox, #requests table + .linkbox, #collage table + .linkbox {
+	background: url(http://whatimg.com/i/udpvfw.png) no-repeat top;
+	padding-bottom: 25px;
+}
+#torrents .linkbox + h3 {
+	padding-left: 20px;
+}
+
+.filter_torrents table {
+	border-collapse: collapse;
+}
+.torrent_table {
+	border-collapse: collapse;
+}
+.torrent_table tr {
+	vertical-align: top;
+}
+.torrent_table tr.torrent,.torrent_table tr.group {
+	font-weight: bold;
+}
+.torrent_table tr.group {
+	background: url(http://whatimg.com/i/c063ub.png) repeat;
+}
+.torrent_table div.tags {
+	font-weight: normal;
+}
+.torrent_table tr .center {
+	vertical-align: middle;
+	text-align: center;
+}
+.torrent_table span {
+	float: right;
+}
+.nobr {
+	white-space: nowrap;
+}
+#torrentdetails .box_albumart p {
+	margin: 0px;
+	padding-top: 10px;
+}
+.box_albumart img {
+	max-width: 206px !important;
+}
+
+
+/* Stats */
+#stats .box {
+	background: url(http://whatimg.com/i/w1lnwf.png) repeat-y;
+	padding: 0px 20px;
+	margin: 25px 0px 70px 0px;
+}
+#stats .box:before {
+	content: url(http://whatimg.com/i/lhm74v.png);
+	position: relative;
+	top: -28px;
+	right: 20px;
+	z-index: -1;
+}
+#stats .box:after {
+	content: url(http://whatimg.com/i/udpvfw.png);
+	position: relative;
+	right: 20px;
+	top: 28px;
+}
+#stats h1, #stats h3 {
+	margin-top: -30px;
+}
+#stats h3 {
+	padding: 25px 0px 0px 25px;
+}
+
+
+/* Blog */
+#blog .thin {
+	margin-top: 21px;
+}
+#blog .box {
+	background: url(http://whatimg.com/i/w1lnwf.png) repeat-y;
+	padding: 0px 20px;
+	margin-bottom: 50px;
+}
+#blog .box:before {
+	content: url(http://whatimg.com/i/lhm74v.png);
+	position: relative;
+	top: -28px;
+	right: 20px;
+	z-index: -1;
+}
+#blog .box:after {
+	content: url(http://whatimg.com/i/udpvfw.png);
+	position: relative;
+	right: 20px;
+	top: 28px;
+}
+#blog .head {
+	margin: -35px 0px 10px 0px;
+}
+#blog .pad {
+	margin-bottom: -20px;
+}
+
+
+/* Staff */
+#staff h3 {
+	margin-top: 10px;
+}
+
+/* Permission Page */
+.permission_head {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.permissions {
+	width: 930px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.permission_container {
+	float: left;
+	width: 300px;
+	padding: 5px;
+}
+
+.permission_container input {
+	margin: 0px 3px 5px 0px;
+	vertical-align: top;
+}
+
+.submit_container {
+	clear: both;
+	text-align: right;
+}
+
+/* Invite tree */
+ul .invitetree {
+	margin: 0px 0px 0px 25px;
+}
+.invitetree li {
+	list-style: none;
+	margin: 10px 2px;
+}
+.curtain {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=80);
+}
+.lightbox {
+	position: fixed;
+	text-align: center;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	padding: 0px;
+	z-index: 1002;
+	overflow: auto;
+}
+#center_poll {
+	background: transparent url(http://whatimg.com/i/2b3nmz.gif) repeat scroll 0% 0%;
+	float: left;
+	height: 9px;
+	margin: 0px;
+	padding: 0px;
+}
+.show_torrents {
+	background: transparent url(http://whatimg.com/i/ulmoqn.png) no-repeat scroll center center;
+	height: 28px;
+	width: 28px;
+}
+.show_torrents_link {
+	border: medium none;
+	display: block;
+	height: 28px;
+	width: 28px;
+}
+.hide_torrents {
+	background: transparent url(http://whatimg.com/i/flhulp.png) no-repeat scroll center center;
+	height: 28px;
+	width: 28px;
+}
+
+/* OiNKPlus */
+.OinkPlus * {
+	padding: 0 2px;
+}
+
+.center {
+	text-align: center;
+}
+.spellcheck { 
+	margin: 25px 0;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+/* End */
